@@ -1,0 +1,50 @@
+Machine Learning Types: The three main types of machine learning are Supervised Learning, Unsupervised Learning, and Reinforcement Learning.
+Overfitting: Overfitting occurs when a model learns the training data too well, including its noise and outliers, making it perform poorly on new, unseen data.
+Bias-Variance Tradeoff: This is the balance between the error introduced by approximating a real-world problem (bias) and the error introduced by the model's sensitivity to small fluctuations in the training set (variance).
+Regularization: Techniques like L1 (Lasso) and L2 (Ridge) regularization prevent overfitting by adding a penalty term to the loss function based on the magnitude of the model's weights.
+Cross-validation: A technique to evaluate the performance of a model by partitioning the data into multiple subsets and training/testing the model several times on different combinations.
+Backpropagation: The primary algorithm for training neural networks, calculating the gradient of the loss function with respect to each weight by the chain rule.
+CNNs: Convolutional Neural Networks are primarily used for image recognition and computer vision tasks.
+LSTM: Long Short-Term Memory networks address the vanishing gradient problem in RNNs by using a gating mechanism to control the flow of information.
+Activation Functions: Common functions include ReLU (Rectified Linear Unit), Sigmoid, and Tanh.
+Pooling Layers: In CNNs, pooling layers (like Max Pooling) reduce the spatial dimensions of the input, decreasing the number of parameters and computation.
+Transformer: The transformer architecture, introduced in "Attention Is All You Need," relies entirely on self-attention mechanisms without using recurrence or convolutions.
+Word Embeddings: Numerical representations of words in a continuous vector space where semantically similar words are mapped to nearby points.
+Transfer Learning: A technique where a model developed for one task is reused as the starting point for a model on a second related task.
+BERT: Bidirectional Encoder Representations from Transformers handles language understanding by training on both left and right context simultaneously.
+Self-attention: A mechanism in transformers that allows each position in a sequence to attend to all other positions to capture global dependencies.
+GPT: Generative Pre-trained Transformer is trained using a causal language modeling objective to predict the next token in a sequence.
+Instruction Tuning: Fine-tuning an LLM on a dataset of (instruction, output) pairs to improve its ability to follow user commands.
+RLHF: Reinforcement Learning from Human Feedback is used to align LLMs with human preferences.
+Chain-of-thought: A prompting technique that encourages the LLM to generate intermediate reasoning steps before providing the final answer.
+GPT-4 Context: GPT-4 originally supported context lengths of 8k and 32k tokens, with later versions (Turbo) supporting up to 128k.
+RAG: Retrieval-Augmented Generation combines LLMs with external knowledge retrieval to provide more accurate and up-to-date answers.
+RAG Components: A typical RAG pipeline includes a retriever (to find relevant docs), a prompt (to combine context and question), and an LLM (to generate the answer).
+Dense Retrieval: A retrieval method that uses dense vector embeddings and similarity search (like cosine similarity) instead of keyword matching.
+Chunking: Dividing large documents into smaller pieces (chunks) is important in RAG to fit the LLM's context window and improve retrieval relevance.
+Advanced RAG: Techniques like query expansion, reranking, and hybrid search can improve RAG performance beyond basic retrieval.
+Vector Databases: Databases designed to store and efficiently search through high-dimensional vector embeddings.
+FAISS: Facebook AI Similarity Search is a library for efficient similarity search and clustering of dense vectors.
+Text Embeddings: Capturing semantic meaning by mapping text to a vector space where distance represents semantic similarity.
+HNSW: Hierarchical Navigable Small World is an algorithm for efficient approximate nearest neighbor search in high-dimensional spaces.
+Hybrid Search: Combining vector search (semantic) with traditional keyword search (BM25) for better results.
+LangChain: A framework for building applications powered by large language models.
+LCEL: LangChain Expression Language is a declarative way to compose chains and runnables.
+LangGraph: A library for building stateful, multi-agent applications with LLMs using graphs.
+LangChain Memory: Supports various types like ConversationBufferMemory, ConversationSummaryMemory, etc.
+LangChain Retrievers: Interfaces that return documents given an unstructured query.
+LangSmith: A platform for debugging, testing, evaluating, and monitoring LLM applications.
+LangSmith Traces: Capture inputs, outputs, latency, token usage, and intermediate steps of a chain.
+LangSmith Prompt Hub: A central repository for sharing and versioning prompts.
+Production LLMs: LangSmith helps monitor performance, detect regressions, and debug production issues.
+LangSmith Datasets: Used for systematic testing and evaluation of LLM pipelines.
+RAGAS: A framework for automated evaluation of RAG pipelines.
+Faithfulness: A RAGAS metric that measures how much the answer is derived from the retrieved context.
+Answer Relevancy: Measures how relevant the generated answer is to the original question.
+Context Recall: Measures if all the necessary information to answer the question is present in the retrieved context.
+RAGAS Inputs: Typically requires (question, answer, contexts, reference).
+Guardrails AI: A framework for adding structure, type, and quality guarantees to LLM outputs.
+PII: Personally Identifiable Information; detecting it is crucial for privacy and compliance.
+Structured Output: Ensuring LLM responses follow a specific schema (e.g., JSON).
+Constitutional AI: An approach to training AI systems to be helpful, honest, and harmless using a set of principles (a "constitution").
+AI Safety: Concerns include bias, toxicity, hallucinations, and alignment with human values.
